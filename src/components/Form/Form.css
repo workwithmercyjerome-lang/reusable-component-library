@@ -1,0 +1,23 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form .button {
+  align-self: flex-start;
+}
+
+.form-message {
+  margin-top: -4px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.form-error {
+  color: #b3261e;
+}
+
+.form-success {
+  color: #2f6b1f;
+}

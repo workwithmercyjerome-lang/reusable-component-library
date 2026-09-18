@@ -1,0 +1,158 @@
+.modal-trigger,
+.modal-cancel,
+.modal-confirm,
+.modal-close {
+  font: inherit;
+  cursor: pointer;
+}
+
+/* Trigger */
+
+.modal-trigger {
+  min-height: 46px;
+  padding: 0 24px;
+
+  border: 1.5px solid transparent;
+  border-radius: 100px;
+
+  background: var(--black);
+  color: var(--white);
+
+  font-size: 0.92rem;
+  font-weight: 700;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.modal-trigger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(10, 10, 10, 0.22);
+}
+
+/* Overlay */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(10, 10, 10, 0.55);
+
+  z-index: 1000;
+}
+
+/* Modal */
+
+.modal {
+  width: min(100%, 480px);
+
+  overflow: hidden;
+
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+
+  box-shadow: 0 24px 64px rgba(10, 10, 10, 0.2);
+}
+
+/* Header */
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 22px;
+
+  border-bottom: 1px solid var(--line);
+}
+
+.modal-header h3 {
+  color: var(--black);
+  font-size: 1.05rem;
+}
+
+.modal-close {
+  width: 32px;
+  height: 32px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: transparent;
+  color: var(--gray-700);
+
+  font-size: 22px;
+  line-height: 1;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.modal-close:hover {
+  background: var(--off-white);
+  color: var(--black);
+}
+
+/* Body */
+
+.modal-body {
+  padding: 22px;
+
+  color: var(--gray-700);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Footer */
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+
+  padding: 16px 22px;
+
+  border-top: 1px solid var(--line);
+}
+
+.modal-cancel,
+.modal-confirm {
+  min-height: 40px;
+  padding: 0 18px;
+
+  border-radius: 100px;
+
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.modal-cancel {
+  border: 1.5px solid var(--black);
+
+  background: transparent;
+  color: var(--black);
+}
+
+.modal-cancel:hover {
+  background: var(--black);
+  color: var(--white);
+}
+
+.modal-confirm {
+  border: 1.5px solid var(--black);
+
+  background: var(--black);
+  color: var(--white);
+}
+
+.modal-confirm:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(10, 10, 10, 0.22);
+}

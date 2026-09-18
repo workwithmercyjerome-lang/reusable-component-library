@@ -1,0 +1,44 @@
+.loader-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.loader {
+  display: block;
+
+  border: 3px solid var(--line);
+  border-top-color: var(--black);
+  border-radius: 50%;
+
+  animation: loader-spin 0.7s linear infinite;
+}
+
+/* Sizes */
+
+.loader-small {
+  width: 18px;
+  height: 18px;
+}
+
+.loader-medium {
+  width: 28px;
+  height: 28px;
+}
+
+.loader-large {
+  width: 38px;
+  height: 38px;
+}
+
+.loader-text {
+  color: var(--gray-700);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+@keyframes loader-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
